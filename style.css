@@ -102,9 +102,9 @@ button {
     }
     .container {
         width: 85%;
-        height: 380px;
-        display: grid;
+        margin: 2rem;
         grid-template-columns: 1fr;
+        height: auto;
     }
     .first {
         grid-column: 1/2;
