@@ -20,7 +20,8 @@ body {
 }
 
 .container {
-    max-width: 40%;
+    max-width: 526px;
+    height: 380px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -92,4 +93,29 @@ button {
     border-radius: 4px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
+}
+
+
+@media only screen and (max-device-width: 812px) {
+    .main {
+        height: 100vh;
+    }
+    .container {
+        width: 85%;
+        height: 380px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .first {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .second {
+        border-bottom-left-radius: 0;
+    }
+    
+    .third {
+        border-bottom-left-radius: 4px;
+    }
 }
